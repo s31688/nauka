@@ -16,6 +16,9 @@ public class Main {
         Artefact artefact = new Artefact(LocalDate.now(), "Someone someone", "Next sth", "silk",
                 1000);
         artefact.showInfo();
+        Sculpture sculpture2 = new Sculpture(LocalDate.now(), "Vase", "Another sth", "rock",
+                "Abc Qwerty", 1992);
+        sculpture2.showInfo();
         museum.addExhibit(painting);
         museum.addExhibit(sculpture);
         museum.addExhibit(painting);
@@ -24,5 +27,6 @@ public class Main {
         museum.removeExhibit(painting);
         museum.addExhibit(artefact);
         System.out.println(museum.exhibits);
+        museum.showLastMaintenanceDate();
     }
 }

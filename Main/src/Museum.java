@@ -27,6 +27,7 @@ public class Museum {
             exhibits.add(exhibit);
         } catch (IllegalArgumentException e) {
             e.getStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
@@ -38,6 +39,7 @@ public class Museum {
             exhibits.remove(exhibit);
         } catch (IllegalArgumentException e) {
             e.getStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
